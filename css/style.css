@@ -1,0 +1,21 @@
+/* div colors to make lesson clear */
+
+#one { background-color: aquamarine;}
+#two { background-color: blueviolet;}
+#three { background-color: grey;}
+#four { background-color: pink;}
+#five { background-color: yellow}
+#six { background-color: red;}
+
+/*                                  */
+
+
+.container {
+    display: grid;
+    /* LESSON 1. grid-template-columns: 100px auto 100px;*/ /* AUTO is responsive. WIDTH plus automatically arranges divs across into columns */
+    /* LESSON 2.*/ grid-template-columns: repeat(3, 1fr);/* longhand for this is 1fr 1fr 1fr;*/ /* CAN do 1fr 2fr 1fr. keeps same ratio plus responsiveness */
+    grid-template-rows: repeat (2, 50px); /* longhand for this is 50px 50px; /* height of first row, then second row */
+    /* LESSON 3. ULTIMATE SHORTHAND FOR ABOVE: grid-template: repeat(2, 50px) / repeat(3, 1fr); */
+    
+    grid-gap: 3px; /* puts gutters in */
+}
